@@ -1,3 +1,5 @@
+import time
+
 # Find set of vertex i
 def find(i):
     while parent[i] != i:
@@ -50,3 +52,7 @@ graph = [[INF, 7, INF, 5, INF, INF, INF],
  
 # Print the solution
 greedy_kruskal_mst(graph)
+
+end_time = time.time()
+final_time = end_time - start_time
+print("Processing Time:", final_time)
