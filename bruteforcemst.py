@@ -1,4 +1,5 @@
 import itertools
+import time
 
 def generate_edges(graph):
     edges = []
@@ -65,3 +66,7 @@ print("Minimum Spanning Tree:")
 for u, v, weight in minimum_spanning_tree:
     print(f"{u} -- {v} (Weight: {weight})")
 print("Minimum Cost:", minimum_cost)
+
+end_time = time.time()
+final_time = end_time - start_time
+print("Processing Time:", final_time)
