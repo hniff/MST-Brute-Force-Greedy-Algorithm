@@ -40,7 +40,7 @@ def greedy_kruskal_mst(cost):
 V = 7
 parent = [i for i in range(V)]
 INF = float('inf')
-cost = [[INF, 7, INF, 5, INF, INF, INF],
+graph = [[INF, 7, INF, 5, INF, INF, INF],
          [7, INF, 8, 9, 7, INF, INF],
          [INF, 8, INF, INF, 5, INF, INF],
          [5, 9, INF, INF, 15, 6, INF],
@@ -49,4 +49,4 @@ cost = [[INF, 7, INF, 5, INF, INF, INF],
          [INF, INF, INF, INF, 9, 11, INF]]
  
 # Print the solution
-greedy_kruskal_mst(cost)
+greedy_kruskal_mst(graph)
